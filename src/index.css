@@ -1,0 +1,89 @@
+/* Base styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main layout */
+.app-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.5s ease;
+}
+
+/* Aesthetic background colors */
+.app-container.default {
+  background-color: #f0f0f0;
+}
+.app-container.clear {
+  background-color: #ffefba; /* sunny soft yellow */
+}
+.app-container.rain {
+  background-color: #a5b4fc; /* rainy soft blue */
+}
+.app-container.clouds {
+  background-color: #cbd5e1; /* cloudy grayish blue */
+}
+.app-container.snow {
+  background-color: #e0f7fa; /* icy pale cyan */
+}
+.app-container.fog {
+  background-color: #e2e8f0; /* muted foggy grey */
+}
+.app-container.hot {
+  background-color: #fca5a5; /* warm red-pink */
+}
+.app-container.cold {
+  background-color: #bae6fd; /* cool blue */
+}
+.app-container.mild {
+  background-color: #fef9c3; /* mild soft yellow */
+}
+
+/* Content Card */
+.content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Inputs and Button */
+input, button {
+  padding: 12px;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #1e40af;
+}
+
+/* Weather Card */
+.card {
+  margin-top: 20px;
+  background-color: #f1f5f9;
+  padding: 20px;
+  border-radius: 12px;
+}
+.card img {
+  width: 80px;
+}
+.error {
+  color: red;
+}
